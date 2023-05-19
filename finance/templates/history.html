@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+
+    <table class="table table-striped table-dark table-bordered">
+        <thead class="thead-dark">
+            <tr>
+                <td scope="col">Type</td>
+                <td scope="col">Symbol</td>
+                <td scope="col">Shares number</td>
+                <td scope="col">Price</td>
+                <th scope="col">When</th>
+            </tr>
+        </thead>
+        <tbody class="table-light">
+            {% for transaction in transactions %}
+                <tr>
+                    {% if transaction["type"] == "B" %}
+                        <td>Bought</td>
+                    {% else %}
+                        <td>Sold</td>
+                    {% endif %}
+                    <td>{{ transaction["symbol"] }}</td>
+                    <td>{{ transaction["num_shares"] }}</td>
+                    <td>{{ transaction["price"] }}</td>
+                    <td>{{ transaction["date"] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+{% endblock %}

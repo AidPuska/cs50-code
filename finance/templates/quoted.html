@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Quoted
+{% endblock %}
+
+{% block main %}
+
+    {% if symbol %}
+        <p>Name: <b>{{ symbol["name"] }}</b></p>
+        <p>Price: {{price | usd}}</p>
+        <p>Symbol: {{ symbol["symbol"] }}</p>
+    {% else %}
+        <p>No data.</p>
+    {% endif %}
+
+{% endblock %}

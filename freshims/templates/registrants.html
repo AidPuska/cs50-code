@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+    <ul>
+        {% for name in REGISTRANTS %}
+            <li>{{ name }} choose {{ REGISTRANTS[name] }}</li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}

@@ -1,0 +1,3 @@
+1. I would write SQL queries to get average energy, danceability and valence to get numbers that on some scale represents someone's aura
+2. Maybe, my calculation is not accurate, beacause average may not be best representation of someone's aura. Better calculation would be
+to divide them in three categories, with low, middle and high number, and for each number give user one song that describes his aura.

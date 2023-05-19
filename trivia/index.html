@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.getElementById("multiple").addEventListener("click", function(e) {
+                console.log(e)
+            });
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What is approximate ratio of sheeps to people in New Zealand</h3>
+                <button class="multiple" id="multiple">6 people per 1 sheep</button>
+                <button class="multiple">3 people per 1 sheep</button>
+                <button class="multiple">1 people per 1 sheep</button>
+                <button class="multiple">1 people per 3 sheep</button>
+                <button class="multiple">1 people per 6 sheep</button>
+
+                <p id="response"></p>
+            </div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>Biggest country in Europe?</h3>
+                <input type="text" autofocus placeholder="Name">
+                <button class="check">Check Answer</button>
+                <p id="res"></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+sort1 uses: Bubble sort
+
+How do you know?: It is a bit slower from sort3, when is needs to sort bigger ammount of data
+
+sort2 uses: Merge sort
+
+How do you know?: It is a lot faster from other two sort programs
+
+sort3 uses: Selection sort
+
+How do you know?: It is a bit faster than sort1, it sorts bigger data faster than sort1
